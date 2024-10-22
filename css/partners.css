@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.error-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 60px;
+    background-color: #1a1a1a; /* Slightly darker background for better contrast */
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.error-code {
+    font-size: 150px;
+    font-weight: 700;
+    color: #ffd60a; /* Keep this for the error code color */
+    margin-bottom: 30px;
+}
+
+.error-message {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff; /* Keep this for the error message color */
+    margin-bottom: 40px;
+}
+
+/* Optional: Add a hover effect for better user experience */
+.error-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
